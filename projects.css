@@ -1,0 +1,95 @@
+/* Projects Page Styles */
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
+    padding-top: 120px; /* adjust depending on header height */
+}
+
+/* Header */
+header {
+    position: fixed;  /* always visible */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: url("images/header.png") center/cover no-repeat; /* keep background image */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    color: #0C1634;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* optional subtle shadow */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header .logo .company-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0C1634;
+    white-space: nowrap;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #808080;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #000000; /* changes text color only */
+    text-decoration: underline; /* adds underline on hover/active */
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 60px 15%;
+    background: #fff;
+    text-align: center;
+}
+
+.projects-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.projects-section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
